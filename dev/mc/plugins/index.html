@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
-    <title>Documentation</title>
+    <title>Plugins</title>
     <link href="https://nsgw.xyz/css/bootstrap.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -44,6 +44,17 @@
         a:hover {
             color: inherit;
         }
+
+        .whitebtn {
+            transition: 0.2s;
+            width: 100%;
+        }
+        .whitebtn:hover {
+            opacity: 0.4;
+        }
+        .whitebtn:after {
+            opacity: 1;
+        }
         .button-d {
             opacity: 0.7;
             transition: 0.8s;
@@ -73,8 +84,7 @@
         <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link" href="https://dev.nsgw.xyz/">Home</a>
             <a class="nav-link active" aria-current="page" href="#">MC</a>
-            <a class="nav-link active" aria-current="page" href="https://dev.nsgw.xyz/mc/docs">Docs</a>
-            <a class="nav-link" href="https://dev.nsgw.xyz/mc/sources">Source</a>
+            <a class="nav-link active" aria-current="page" href="#">Plugins</a>
             <a class="nav-link" href="https://dev.nsgw.xyz/mc/apis">MC API List</a>
             <a class="nav-link" href="https://nsgw.xyz/contact/">Contact</a>
         </nav>
@@ -82,15 +92,14 @@
         <p style="color: #e83b1b; font-weight: bolder">Under Development / Not Released</p>
         <div class="row" data-masonry='{"percentPosition": true }'>
             <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
-                <a href="https://nsys.nsgw.xyz/">
-                    <div class="card button" style="background-color: #000000; border-radius: 10%;">
-                        <div class="card-body" style="color: #AAAAAA; background-color: #8b2917">
-                            <h5 class="card-title" style="font-weight: bold">NSys</h5>
-                            <p class="card-text">Moderation enhancements and useful features (such as homes).</p>
-                            <p class="card-text" style="color:#5ac205;font-size: 25px">Visit Docs -></p>
-                        </div>
+                <div class="card" style="background-color: #000000; border-radius: 10%;">
+                    <div class="card-body" style="color: #AAAAAA; background-color: #8b2917">
+                        <h5 class="card-title" style="font-weight: bold">NSys</h5>
+                        <p class="card-text">Moderation enhancements and useful features (such as homes).</p>
+                        <a href="https://nsys.nsgw.xyz/" class="btn btn-lg btn-secondary border-grey bg-black whitebtn" style="color: #86b7fe;">Docs</a><br>
+                        <a href="https://github.com/nsgwick/NSys" class="btn btn-lg btn-secondary border-grey bg-black whitebtn" style="color: #86b7fe;">Source code</a><br>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <hr class="my-5">
@@ -99,14 +108,14 @@
         <p style="color: #e8e51b; font-weight: bolder">Released and abandoned</p>
         <div class="row" data-masonry='{"percentPosition": true }'>
             <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
-                <a href="https://github.com/Nebula-O/PersonalPVP/wiki">
                     <div class="card button" style="background-color: #000000; border-radius: 10%;">
                         <div class="card-body" style="color: #AAAAAA; background-color: #111111">
                             <h5 class="card-title" style="font-weight: bold">PersonalPVP</h5>
-                            <p class="card-text" style="color:#545454;font-size: 16px">Page -></p>
+                            <p class="card-text" style="color:#545454;font-size: 16px">Source Code -></p>
+                            <a href="https://github.com/Nebula-O/PersonalPVP/wiki" class="btn btn-lg btn-secondary border-grey bg-black whitebtn" style="color: #86b7fe;">Docs</a><br>
+                            <a href="https://github.com/Nebula-O/PersonalPVP" class="btn btn-lg btn-secondary border-grey bg-black whitebtn" style="color: #86b7fe;">Source code</a><br>
                         </div>
                     </div>
-                </a>
             </div>
         </div>
     </header>
