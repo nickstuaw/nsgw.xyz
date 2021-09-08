@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Development</title>
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <link href="../css/cover.css" rel="stylesheet" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/" />
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -20,20 +21,115 @@
                 font-size: 3.5rem;
             }
         }
+        .button {
+            transition: 0.2s;
+        }
+        .button:hover {
+            opacity: 0.8;
+            border-radius: 25px;
+            padding-bottom: 5px;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+        .button:after {
+            opacity: 1;
+            border-radius: 5px;
+            top: 0;
+            bottom: 0;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            color: inherit;
+        }
+        .button-d {
+            opacity: 0.7;
+            transition: 0.8s;
+        }
+        .button-d:hover {
+            opacity: 1;
+            border-radius: 25px;
+            padding-bottom: 5px;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+        .button-d:after {
+            opacity: 0.7;
+            border-radius: 5px;
+            top: 0;
+            bottom: 0;
+        }
     </style>
 </head>
 <body class="d-flex h-100 text-center text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
         <div style="user-select: none">
-            <h3 class="float-md-start mb-0">nsgw<span style="color:#636464">.xyz</span></h3>
+            <a href="../"><h3 class="float-md-start mb-0">nsgw<span style="color:#636464">.xyz</span></h3></a>
             <h3 style="text-align: center;">Dev Pages</h3>
-            <nav class="nav nav-masthead justify-content-center float-md-end" style="float: right">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="https://nsgw.xyz/contact/">Contact</a>
-            </nav>
         </div>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="mc">MC</a>
+            <a class="nav-link" href="mc/apis">MC API List</a>
+        </nav>
     </header>
+    <main class="px-3">
+        <br>
+        <h6 style="color: #6ba00e">This site is a work-in-progress but thanks for visiting!</h6><br>
+        <p class="lead" style="color: #bbd6fd; font-family: sans-serif; font-weight: bold; font-style: oblique">
+            Hey, welcome to my small site! <br>I'm Nick (18, England).<br>
+            <br>If you don't know, my main hobbies are programming, photography, and drawing.<br>I'll use this for random things and extra content such as project documentation.<br>
+            Have a look around even though there isn't much to see right now!
+        </p><br>
+        <a href="https://nsgw.xyz/contact" class="btn btn-lg btn-secondary border-grey bg-black whitebtn" style="color: #86b7fe">Contact</a>
+
+    </main>
+    <main class="container py-5">
+        <hr class="my-5">
+        <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
+                <a href="mc">
+                    <div class="card button" style="background-color: #000000; border-radius: 10%;" title="Minecraft Server Coding">
+                        <div class="card-body" style="color: #AAAAAA;">
+                            <h5 class="card-title" style="font-weight: bold">Minecraft Server Coding</h5>
+                            <p class="card-text">with the PaperMC API
+                            <p class="card-text" style="color:#5ac205;font-size: 25px">-></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
+                <a href="#">
+                    <div class="card button-d" style="background-color: #000000; border-radius: 10%;" title="Other">
+                        <div class="card-body" style="color: #AAAAAA;">
+                            <h5 class="card-title" style="font-weight: bold">Other</h5>
+                            <p class="card-text">Coming Soon</p>
+                            <p class="card-text" style="color:#dc3545;font-size: 25px">X</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
+                <div class="card button-d" style="background-color: #000000; border-radius: 10%;">
+                    <div class="card-body" style="color: #AAAAAA;">
+                        <h5 class="card-title" style="font-weight: bold">Other</h5>
+                        <p class="card-text" style="color:#dc3545;font-size: 25px">X</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+        <p><a href="#" class="text-white">nsgw.xyz</a> by <a href="https://nsgw.xyz/contact" class="text-white">@nsgw</a>.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>
