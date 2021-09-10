@@ -7,5 +7,6 @@
     <orderEntry type="library" name="cover" level="application" />
     <orderEntry type="library" name="bootstrap.bundle" level="application" />
     <orderEntry type="library" name="default" level="application" />
+    <orderEntry type="library" name="animation" level="application" />
   </component>
 </module>
