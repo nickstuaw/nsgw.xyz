@@ -10,6 +10,12 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
     <style>
+        body {
+            background-image: url("img/bg.JPEG");
+            background-blend-mode: soft-light;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -35,6 +41,19 @@
         a:hover {
             color: inherit;
         }
+        .sa {
+            color: inherit;
+            opacity: 1;
+            text-decoration: underline;
+            text-decoration-color: inherit;
+            transition: 0.2s;
+        }
+        .sa:hover {
+            opacity: 0.8;
+        }
+        .sa:after {
+            opacity: 1;
+        }
 
         .whitebtn {
             transition: 0.2s;
@@ -51,24 +70,25 @@
         }
 
         .button {
+            opacity: 0.9;
             transition: 0.2s;
         }
         .button:hover {
-            opacity: 0.8;
+            opacity: 1;
             border-radius: 25px;
             padding-bottom: 5px;
             padding-left: 3px;
             padding-right: 3px;
         }
         .button:after {
-            opacity: 1;
+            opacity: 0.9;
             border-radius: 5px;
             top: 0;
             bottom: 0;
         }
         .button-d {
             opacity: 0.7;
-            background-color: #5d1717;
+            background-color: rgba(129, 37, 21, 0.72);
             transition: 0.8s;
         }
         .button-d:hover {
@@ -99,8 +119,6 @@
         }
     </style>
 
-    <link href="css/default.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
 
@@ -116,14 +134,15 @@
                 <a class="nav-link" href="https://nsgw.xyz/contact/">Contact</a>
             </nav>
         </div>
-        <hr class="my-5">
+    </header>
+    <main class="px-3" style="user-select: none">
         <div class="row" data-masonry='{"percentPosition": true }'>
             <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
                 <a href="https://dev.nsgw.xyz/" style="text-decoration: none">
-                    <div class="card button" style="background-color: #000000; border-radius: 10%;" title="Dev Pages">
+                    <div class="card button" style="background-color: rgba(45,45,45,0.72); border-radius: 10%;" title="Dev Pages">
                         <div class="card-body" style="color: #AAAAAA;">
-                            <h5 class="card-title" style="font-weight: bold">Dev Pages</h5>
-                            <p class="card-text" style="color: rgba(98,98,98,0.41)">1 ongoing project</p>
+                            <h5 class="card-title" style="font-weight: bold">Development</h5>
+                            <p class="card-text">@ dev.nsgw.xyz</p>
                             <p class="card-text" style="color:#5ac205;font-size: 25px">-></p>
                         </div>
                     </div>
@@ -133,7 +152,7 @@
                 <a href="#" style="text-decoration: none">
                     <div class="card button-d" style="border-radius: 10%;" title="Art Pages">
                         <div class="card-body" style="color: #AAAAAA;">
-                            <h5 class="card-title" style="font-weight: bold">Art Pages</h5>
+                            <h5 class="card-title" style="font-weight: bold">Art</h5>
                             <p class="card-text">Coming Soon
                             <p class="card-text" style="color:#dc3545;font-size: 25px">X</p>
                         </div>
@@ -141,63 +160,45 @@
                 </a>
             </div>
             <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
-                <div class="card button-d" style="border-radius: 10%;">
+                <div class="card button-d" style="border-radius: 10%; background-color: #363636">
                     <div class="card-body" style="color: #AAAAAA;">
-                        <h5 class="card-title" style="font-weight: bold">Coming Soon</h5>
+                        <h5 class="card-title" style="font-weight: bold;">Coming Soon</h5>
                         <p class="card-text" style="color:#dc3545;font-size: 25px">X</p>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <main class="px-3">
-        <br>
-        <p class="lead" style="color: #bbd6fd; font-family: sans-serif; font-weight: bold; font-style: oblique">
-            Hey, welcome to my small site! <br>I'm Nick (18, England).<br>
-            <br>If you don't know, my main hobbies are programming, photography, and drawing.<br>I'll use this for random things and extra content such as project documentation.<br>
-            Have a look around even though there isn't much to see right now!
-        </p><br>
-        <a href="https://nsgw.xyz/contact" class="btn btn-lg btn-secondary border-grey bg-black whitebtn" style="color: #86b7fe; text-decoration: none">Contact</a>
-    </main>
-    <main class="container py-5">
-        <hr class="my-5">
+        <p class="lead" style="color: #2566c0; font-size: 18px; font-family: sans-serif; font-weight: bold; font-style: oblique">
+            Hey, welcome to my site! I'm Nick (18, in England).<br><span style="color: rgba(131,126,126,0.8)">
+            My main hobbies are <a class="sa" href="dev" style="color: inherit; text-decoration: underline;text-decoration-color: inherit">programming</a>, photography, and drawing.<br>I'll use this to collect links and release extra content such as project documentation.</span></p></main>
         <div class="row" data-masonry='{"percentPosition": true }'>
             <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
-                <a href="#" style="text-decoration: none"><div class="card button" style="background-color: #000000; border-radius: 10%;" title="Discord">
+                <a href="#" style="text-decoration: none"><div class="card button" style="background-color: rgba(9,68,98,0.8); border-radius: 10%;" title="Discord">
                     <div class="card-body" style="color: #AAAAAA;">
                         <img class="card-img-top" width="100%" height="64" src="img/discord.svg" draggable="false">
-                        <h5 class="card-title" style="font-weight: bold">Hangout Server</h5>
-                        <p class="card-text">Click to join</p>
                     </div>
                 </div></a>
             </div>
             <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
-                <a href="https://github.com/nsgwick" style="text-decoration: none"><div class="card button" style="background-color: #000000; border-radius: 10%;" title="GitHub">
+                <a href="https://github.com/nsgwick" style="text-decoration: none"><div class="card button" style="background-color: rgba(52,52,52,0.8); border-radius: 10%;" title="GitHub">
                     <div class="card-body" style="color: #AAAAAA;">
                         <img width="32" height="32" src="img/github.png" draggable="false"><br>
-                        <img width="30" height="60" src="img/java.png" draggable="false">
-                        <h5 class="card-title" style="font-weight: bold">Github Profile</h5>
-                        <p class="card-text">Click here</p>
                     </div>
                 </div></a>
             </div>
             <div class="col-sm-6 col-lg-4 mb-4" style="user-select: none">
-                <a href="https://open.spotify.com/artist/7errC26iwGliXFBlzXEgUu?si=GJgSq9jOTFKqkKoK9Ph8Sw&dl_branch=1" style="text-decoration: none"><div class="card button" style="background-color: #000000; border-radius: 10%;" title="Spotify">
+                <a href="https://open.spotify.com/artist/7errC26iwGliXFBlzXEgUu?si=GJgSq9jOTFKqkKoK9Ph8Sw&dl_branch=1" style="text-decoration: none"><div class="card button" style="background-color: rgba(14,66,9,0.8); border-radius: 10%;" title="Spotify">
                     <div class="card-body" style="color: #AAAAAA;">
                         <img class="card-img-top" width="100%" height="45" src="img/spotify.png" draggable="false">
-                        <h5 class="card-title" style="font-weight: bold">Music by me</h5>
-                        <p class="card-text">Created using Ableton</p>
                     </div>
                 </div></a>
             </div>
         </div>
-    </main>
-
     <footer class="mt-auto text-white-50">
         <p><a href="#" class="text-white">nsgw.xyz</a> by <a href="https://nsgw.xyz/contact" class="text-white">@nsgw</a>.</p>
         <p>See the <a href="https://github.com/nsgwick/nsgw.xyz" class="text-white">source</a>.</p>
     </footer>
+    </main>
 
     <script src="js/bootstrap.bundle.js"></script>
 
