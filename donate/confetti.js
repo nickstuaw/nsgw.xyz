@@ -75,6 +75,6 @@ confetti = (new Confetti for i in [1..NUM_CONFETTI])
 window.step = ->
 requestAnimationFrame(step)
 context.clearRect(0,0,w,h)
-c.draw() for c in confetti
-
-step()
+c.draw()
+for c in confetti
+    step()
